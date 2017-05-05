@@ -6,11 +6,6 @@ var board = {
 	},
 	element: $('#board .column-container')
 };
-
-$('.create-column').click(function() { 
-	var columnName = prompt('Wpisz nazwę kolumny'); 
-	board.createColumn(new Column(columnName)); 
-});
 	
 function initSortable() {
     $('.card-list').sortable({
